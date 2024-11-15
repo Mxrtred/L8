@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import NumberList from './NumberList';
+import StringList from './StringList';
+import CardList from './CardList';
+import NumberFilter from './NumberFilter';
+import AddList from './AddList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <NumberList />
+      <StringList />
+      <CardList people={[{name:'Kirill', age:'52'},{name:'NeKirill', age:'21'}]}/>
+      <NumberFilter />
+      <AddList initialItems={['Sobaka','NeSobaka']}/>
+      </div>
+    );
 }
 
 export default App;
