@@ -76,13 +76,11 @@ th {
 
 ul,
 li {
-  justify-content: center;
-  position: center;
+
 }
 
 .hover-item:hover {
-  background-color: rgb(0, 255, 255);
-  color: white;
+  color: rgb(0, 255, 255);
 }
 
 .image-grid {
@@ -90,6 +88,8 @@ li {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   padding: 10px;
+  justify-content: center;
+  position: center;
 }
 
 .image-grid img {
@@ -102,9 +102,11 @@ li {
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 0.5fr));
   gap: 10px;
   padding: 10px;
+  justify-content: center;
+  position: center;
 }
 
 .image-gallery img {
